@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+span{
+    background: url('./9004758_heart_love_valentine_like_icon.png');
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    pointer-events: none;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: animate 35s linear;
+}
+
+@keyframes animate {
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+
+    100%{
+        transform: translate(-50%,-50000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+}

@@ -1,0 +1,121 @@
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Header Styles */
+header {
+    background-color: #343a40;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    transition: font-size 0.3s ease-in-out;
+}
+
+/* Home Section Styles */
+#home {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    transition: background-image 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#home h1 {
+    font-size: 3rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+#home p {
+    font-size: 1.2rem;
+    animation: fadeInUp 1s ease-out 0.5s;
+}
+
+/* Projects Section Styles */
+#projects {
+    background-color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#projects h2 {
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.project-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #007bff; /* Add border style */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-width 0.3s ease-in-out; /* Add border-width transition */
+    animation: fadeInUp 1s ease-out;
+}
+
+.project-card:hover {
+    background-color: #e9ecef;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    border-color: #0056b3; /* Change border color on hover */
+}
+
+/* Add hover effect and shadow to project card content */
+.project-card .card-body {
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover .card-body {
+    transform: translateY(-5px); /* Move the content up slightly on hover */
+}
+
+.project-card:hover .card-body:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 50px 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
