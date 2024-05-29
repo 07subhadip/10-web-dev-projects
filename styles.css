@@ -38,6 +38,7 @@ header {
 
 /* Home Section Styles */
 #home {
+    background-color: rgb(82, 82, 85);
     background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
