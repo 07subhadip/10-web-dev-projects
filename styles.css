@@ -72,16 +72,36 @@ header {
     background-color: #f8f9fa;
     padding: 20px;
     border-radius: 10px;
-    border: 2px solid #007bff; /* Add border style */
+    border: 2px solid #007bff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-width 0.3s ease-in-out; /* Add border-width transition */
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-width 0.3s ease-in-out;
     animation: fadeInUp 1s ease-out;
+    position: relative; /* Add position relative */
 }
 
 .project-card:hover {
     background-color: #e9ecef;
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
-    border-color: #0056b3; /* Change border color on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    border-color: #0056b3;
+}
+
+/* Set a fixed height for the card text */
+.project-card .card-text {
+    max-height: 80px; /* Adjust this height as needed */
+    overflow: hidden;
+}
+
+/* Show full card text on hover */
+.project-card:hover .card-text {
+    max-height: none;
+    overflow: visible;
+}
+
+/* Add ellipsis (...) for overflowed text */
+.project-card .card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Add hover effect and shadow to project card content */
@@ -90,11 +110,11 @@ header {
 }
 
 .project-card:hover .card-body {
-    transform: translateY(-5px); /* Move the content up slightly on hover */
+    transform: translateY(-5px);
 }
 
 .project-card:hover .card-body:hover {
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer Styles */
