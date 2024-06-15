@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh; /* Changed to 100vh to ensure full viewport height */
+    align-items: center;
+    font-family: cursive;
+    background-color: #f0f0f0; /* Added background color for better contrast */
+}
+
+.testimonial-container {
+    width: 500px;
+    height: auto; /* Changed to auto to accommodate variable content height */
+    background-color: slateblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    min-width: 400px;
+    padding: 70px 20px;
+    margin: 5px;
+    color: white;
+    position: relative;
+    display: flex; /* Added for better alignment */
+    flex-direction: column; /* Added for better alignment */
+    align-items: center; /* Added for better alignment */
+    text-align: center; /* Added for better text alignment */
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 0; /* Adjusted to ensure image is positioned correctly */
+}
+
+.user-name {
+    font-size: 17px;
+    font-weight: 100;
+    margin-top: 20px; /* Added margin-top for spacing */
+}
